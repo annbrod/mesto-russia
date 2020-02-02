@@ -1,3 +1,17 @@
+import "./pages/index.css";
+
+import Api from "./modules/api";
+import Owner from "./modules/Owner";
+import initialCards from "./modules/initialCards";
+import UserInfo from "./modules/UserInfo";
+import Card from "./modules/card";
+import CardList from "./modules/CardList";
+import Popup from "./modules/Popup";
+import PopupPlace from "./modules/PopupPlace";
+import PopupEdit from "./modules/PopupEdit";
+import PopupImage from "./modules/PopupImage"
+
+
 
 /*Переменные*/
 

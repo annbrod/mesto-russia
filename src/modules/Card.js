@@ -1,11 +1,11 @@
-class Card {
-    constructor(api, user){
-      this.api = api;
-      this.user = user;
-    }
+export default class Card {
+  constructor(api, user) {
+    this.api = api;
+    this.user = user;
+  }
   //Создаёт DOM-элемент карточки
-    create(name, link){   
-      return `
+  create(name, link) {
+    return `
           <div class="place-card">
               <div class="place-card__image" style="background-image: url(${link});">
                   <button class="place-card__delete-icon"></button>
@@ -16,17 +16,17 @@ class Card {
               </div>
           </div>
           `;
-    }
-  
-    like(event) {
-      if (event.target.classList.contains("place-card__like-icon")) {
-        event.target.classList.toggle("place-card__like-icon_liked");
-      }
-    }
-  
-    remove(event) {
-      if (event.target.classList.contains("place-card__delete-icon")) {
-           event.target.closest(".place-card").remove();
-         }
+  }
+
+  like(event) {
+    if (event.target.classList.contains("place-card__like-icon")) {
+      event.target.classList.toggle("place-card__like-icon_liked");
     }
   }
+
+  remove(event) {
+    if (event.target.classList.contains("place-card__delete-icon")) {
+      event.target.closest(".place-card").remove();
+    }
+  }
+}
