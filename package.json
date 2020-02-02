@@ -1,0 +1,23 @@
+{
+  "name": "mesto-russia",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annbrod/mesto-russia.git"
+  },
+  "author": "anastasia tulasova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annbrod/mesto-russia/issues"
+  },
+  "homepage": "https://github.com/annbrod/mesto-russia#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

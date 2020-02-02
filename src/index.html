@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Mesto</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body>
   <div class="root">
     <header class="header root__section">
@@ -26,7 +28,7 @@
     <div class="places-list root__section">
 
       <!-- Пример вёрстки карточки: -->
-       <!-- 
+      <!-- 
       <div class="place-card">
         <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
           <button class="place-card__delete-icon"></button>
@@ -45,15 +47,15 @@
         <img src="./images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new">
-            <input type="text" name="title" class="popup__input popup__input_type_name" 
-              placeholder="Название" minlength="2"maxlength="30" required>
-            <p id="error-title" class="error-message"></p>
-            <input type="url" name="link" class="popup__input popup__input_type_link-url" 
-              placeholder="Ссылка на картинку" required>
-            <p id="error-link" class="error-message"></p>
-            <button type="submit" class="button popup__button popup__button_icon popup__button_disabled">
-              +
-            </button>
+          <input type="text" name="title" class="popup__input popup__input_type_name" placeholder="Название"
+            minlength="2" maxlength="30" required>
+          <p id="error-title" class="error-message"></p>
+          <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку"
+            required>
+          <p id="error-link" class="error-message"></p>
+          <button type="submit" class="button popup__button popup__button_icon popup__button_disabled">
+            +
+          </button>
         </form>
       </div>
     </div>
@@ -63,15 +65,15 @@
         <img src="./images/close.svg" alt="" class="popup__close popup__close_type_edit">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="edit">
-            <input type="text" name="name" class="popup__input popup__input_type_name" 
-              placeholder="Имя" minlength="2" maxlength="30" required>
-            <p id="error-name" class="error-message"></p>
-            <input type="text" name="about" class="popup__input popup__input_type_name" 
-              placeholder="О себе"  minlength="2" maxlength="30" required>
-            <p id="error-about" class="error-message"></p>
-            <button type="submit" class="button popup__button popup__button_text popup__button_disabled">
-              Сохранить
-            </button>
+          <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" minlength="2"
+            maxlength="30" required>
+          <p id="error-name" class="error-message"></p>
+          <input type="text" name="about" class="popup__input popup__input_type_name" placeholder="О себе" minlength="2"
+            maxlength="30" required>
+          <p id="error-about" class="error-message"></p>
+          <button type="submit" class="button popup__button popup__button_text popup__button_disabled">
+            Сохранить
+          </button>
         </form>
       </div>
     </div>
@@ -79,20 +81,22 @@
     <div class="popup image-popup">
       <div class="image-popup__content">
         <img src="./images/close.svg" alt="" class="image-popup__close">
-        <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="" class="image-popup__image"> 
-      </div> 
-  </div>
-  <script src="js/api.js"></script>
-  <script src="js/Owner.js"></script>
-  <script src="js/initialCards.js"></script>
-  <script src="js/UserInfo.js"></script>
-  <script src="js/Card.js"></script>
-  <script src="js/CardList.js"></script>
-  <script src="js/Popup.js"></script>
-  <script src="js/PopupPlace.js"></script>
-  <script src="js/PopupEdit.js"></script>
-  <script src="js/PopupImage.js"></script>
-  <script src="js/script.js"></script>
-  
+        <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt=""
+          class="image-popup__image">
+      </div>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/Owner.js"></script>
+    <script src="js/initialCards.js"></script>
+    <script src="js/UserInfo.js"></script>
+    <script src="js/Card.js"></script>
+    <script src="js/CardList.js"></script>
+    <script src="js/Popup.js"></script>
+    <script src="js/PopupPlace.js"></script>
+    <script src="js/PopupEdit.js"></script>
+    <script src="js/PopupImage.js"></script>
+    <script src="./index.js"></script>
+
 </body>
+
 </html>
