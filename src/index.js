@@ -1,8 +1,27 @@
+import "./pages/index.css";
+
+import Api from "./modules/api";
+import Owner from "./modules/Owner";
+import initialCards from "./modules/initialCards";
+import UserInfo from "./modules/UserInfo";
+import Card from "./modules/card";
+import CardList from "./modules/CardList";
+import Popup from "./modules/Popup";
+import PopupPlace from "./modules/PopupPlace";
+import PopupEdit from "./modules/PopupEdit";
+import PopupImage from "./modules/PopupImage"
+
+
 
 /*Переменные*/
 
+const serverUrl =
+  NODE_ENV === "development"
+    ? "http://praktikum.tk/cohort6"
+    : "https://praktikum.tk/cohort6";
+
 const config = {
-  url: 'http://95.216.175.5/cohort6',
+  url: serverUrl,
   headers: {
     authorization: '42a98203-de24-427c-bcb2-c8aceb066d38',
     'Content-Type': 'application/json'
